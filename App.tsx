@@ -1,20 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import {Provider} from 'react-native-paper';
+import App from './src';
+import {theme} from './src/core/theme';
+import {RecoilRoot} from "recoil";
+import {FirebaseAppProvider} from "./src/client/useFirebaseApp";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+const Main = () => (
+  <FirebaseAppProvider>
+    <RecoilRoot>
+      <Provider theme={theme}>
+        <App/>
+      </Provider>
+    </RecoilRoot>
+  </FirebaseAppProvider>
+);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default Main;
