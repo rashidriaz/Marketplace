@@ -1,11 +1,11 @@
-import React, { memo } from 'react';
-import { View, StyleSheet, Text } from 'react-native';
-import { TextInput as Input } from 'react-native-paper';
-import { theme } from '../core/theme';
+import React, {memo} from 'react';
+import {View, StyleSheet, Text} from 'react-native';
+import {TextInput as Input} from 'react-native-paper';
+import {theme} from '../core/theme';
 
-type Props = React.ComponentProps<typeof Input> & { errorText?: string };
+type Props = React.ComponentProps<typeof Input> & { errorText?: string, touched: boolean };
 
-const TextInput = ({ errorText, ...props }: Props) => (
+const TextInput = ({errorText, touched, ...props}: Props) => (
   <View style={styles.container}>
     <Input
       style={styles.input}
@@ -14,7 +14,7 @@ const TextInput = ({ errorText, ...props }: Props) => (
       mode="outlined"
       {...props}
     />
-    {errorText ? <Text style={styles.error}>{errorText}</Text> : null}
+    {(touched && errorText) ? <Text style={styles.error}>{errorText}</Text> : null}
   </View>
 );
 

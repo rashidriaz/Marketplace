@@ -2,7 +2,7 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   sendPasswordResetEmail,
-  signOut
+  signOut,
 } from "firebase/auth";
 import {useFirebaseApp} from "./useFirebaseApp";
 
@@ -42,9 +42,9 @@ export const useAuth = () => {
     } catch (e) {
       console.log(e)
     }
-
   }
   return {
+    isUserSignedIn: !!auth.currentUser,
     signUp,
     signIn,
     logOut,

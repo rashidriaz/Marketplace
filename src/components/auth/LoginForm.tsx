@@ -66,8 +66,9 @@ export default function LoginForm({navigation}: Props) {
             autoCapitalize="none"
             textContentType="emailAddress"
             keyboardType="email-address"
+            touched={!!touched.email}
+            errorText={errors.email}
           />
-          {touched.email && errors.email && <Text style={{fontSize: 14, color: 'red'}}>{errors.email}</Text>}
           <TextInput
             label="Password"
             returnKeyType="done"
@@ -75,8 +76,9 @@ export default function LoginForm({navigation}: Props) {
             value={values.password}
             onChangeText={handleChange("password")}
             secureTextEntry
+            touched={!!touched.password}
+            errorText={errors.password}
           />
-          {touched.password && errors.password && <Text style={{fontSize: 14, color: 'red'}}>{errors.password}</Text>}
 
           <View style={styles.forgotPassword}>
             <TouchableOpacity

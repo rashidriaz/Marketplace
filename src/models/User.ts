@@ -2,6 +2,7 @@ import {Post} from "./Post";
 import {atom} from "recoil";
 
 export type User = {
+  userId:string
   name: string;
   email: string;
   posts: Post[];

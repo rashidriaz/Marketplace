@@ -4,19 +4,21 @@ import {Navigation} from "../types";
 
 type Props = {
   navigation: Navigation;
+  title?:string
+  showActions?:boolean
 };
-export const AppBar = ({navigation}: Props) => {
+export const AppBar = ({navigation, title, showActions=true}: Props) => {
   const {logOut} = useAuth()
   return (
     <Appbar.Header>
-      <Appbar.Action icon="pencil" onPress={async () => {
+      {showActions && <Appbar.Action icon="pencil" onPress={async () => {
         navigation.navigate("AddPostScreen");
-      }}/>
-      <Appbar.Content title="Marketplace Ltd."/>
-      <Appbar.Action icon="logout" onPress={async () => {
+      }}/>}
+      <Appbar.Content title={title || "Marketplace Ltd."}/>
+      {showActions && <Appbar.Action icon="logout" onPress={async () => {
         await logOut();
         navigation.navigate("HomeScreen");
-      }}/>
+      }}/>}
     </Appbar.Header>
   )
 }

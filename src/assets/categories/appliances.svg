@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://web.resource.org/cc/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" viewBox="0 0 533.57 695.68" version="1.0">
+  <defs id="defs1906">
+    <linearGradient id="linearGradient5515">
+      <stop id="stop5517" offset="0"/>
+      <stop id="stop5519" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient5533" y2="386.65" xlink:href="#linearGradient5515" gradientUnits="userSpaceOnUse" x2="860" y1="952.01" x1="-362.86"/>
+    <linearGradient id="linearGradient5559" y2="386.65" xlink:href="#linearGradient5515" gradientUnits="userSpaceOnUse" x2="860" gradientTransform="translate(-45.714 -45.714)" y1="952.01" x1="-362.86"/>
+    <linearGradient id="linearGradient5606" y2="632.36" gradientUnits="userSpaceOnUse" x2="624.64" y1="712.36" x1="-62.857">
+      <stop id="stop5602" stop-color="blue" offset="0"/>
+      <stop id="stop5604" stop-color="blue" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient5614" y2="584.18" gradientUnits="userSpaceOnUse" x2="-435.65" y1="364.98" x1="-685.58">
+      <stop id="stop5610" stop-color="blue" offset="0"/>
+      <stop id="stop5612" stop-color="blue" stop-opacity="0" offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="layer1" transform="translate(-100.36 -210.62)">
+    <g id="g5616">
+      <rect id="rect5513" stroke-opacity=".86486" height="686.46" width="526.46" stroke="#0f0606" y="214.85" x="102.49" stroke-width="4.259" fill="#ccc"/>
+      <rect id="rect1912" stroke-opacity=".86486" height="522.86" width="527.72" stroke="#0f0606" y="303.79" x="103.28" stroke-width="5.099" fill="url(#linearGradient5559)"/>
+      <rect id="rect1914" stroke-opacity=".86486" height="96.624" width="527.21" stroke="#0f0606" y="212.62" x="103.54" stroke-width="4.0124" fill="url(#linearGradient5559)"/>
+      <path id="path1920" d="m617.14 659.51a155.71 144.29 0 1 1 -311.43 0 155.71 144.29 0 1 1 311.43 0z" stroke-opacity=".86486" transform="translate(-91.429 -91.429)" stroke="#0f0606" stroke-width="15" fill="url(#linearGradient5606)"/>
+      <rect id="rect1924" stroke-opacity=".86486" height="74.299" width="528.58" stroke="#0f0606" y="826.64" x="102.85" stroke-width="4.987" fill="url(#linearGradient5559)"/>
+      <path id="path1926" d="m471.43 829.51v74.28" fill-rule="evenodd" stroke="#000" stroke-width="5" fill="url(#linearGradient5559)"/>
+      <path id="path1928" d="m511.43 309.51a27.143 20 0 1 1 -54.29 0 27.143 20 0 1 1 54.29 0z" stroke-opacity=".86486" transform="translate(0 -45.714)" stroke="#0f0606" stroke-width="3.1" fill="url(#linearGradient5533)"/>
+      <path id="path1930" d="m614.29 316.65a24.286 15.714 0 1 1 -48.58 0 24.286 15.714 0 1 1 48.58 0z" stroke-opacity=".86486" transform="translate(-25.714 -51.429)" stroke="#0f0606" stroke-width="3.1" fill="url(#linearGradient5533)"/>
+      <rect id="rect2819" stroke-opacity=".86486" height="40" width="94.286" stroke="#0f0606" y="235.22" x="120" stroke-width="15" fill="url(#linearGradient5559)"/>
+      <rect id="rect2821" stroke-opacity=".86486" height="17.143" width="40" stroke="#0f0606" y="266.65" x="305.71" stroke-width="15" fill="url(#linearGradient5559)"/>
+      <path id="path2823" d="m248.57 272.36h34.29" fill-rule="evenodd" stroke="#000" stroke-width="1px" fill="url(#linearGradient5559)"/>
+      <path id="path2825" d="m248.57 238.08h42.86" fill-rule="evenodd" stroke="#000" stroke-width="1px" fill="url(#linearGradient5559)"/>
+      <path id="path2827" d="m317.14 238.08h37.15" fill-rule="evenodd" stroke="#000" stroke-width="1px" fill="url(#linearGradient5559)"/>
+      <path id="path2829" d="m380 238.08l40 2.85" fill-rule="evenodd" stroke="#000" stroke-width="1px" fill="url(#linearGradient5559)"/>
+      <path id="path2831" d="m368.57 263.79l54.29-2.86" fill-rule="evenodd" stroke="#000" stroke-width="1px" fill="url(#linearGradient5559)"/>
+      <path id="path2833" d="m374.29 286.65l45.71-2.86" fill-rule="evenodd" stroke="#000" stroke-width="1px" fill="url(#linearGradient5559)"/>
+      <path id="path2835" d="m245.71 292.36h37.15" fill-rule="evenodd" stroke="#000" stroke-width="1px" fill="url(#linearGradient5559)"/>
+      <path id="path2837" d="m-405.71 468.08a100 95.714 0 1 1 -200 0 100 95.714 0 1 1 200 0z" stroke-opacity=".86486" transform="matrix(1.1449 0 0 1.1813 949 13.727)" stroke="#0f0606" stroke-width="15" fill="url(#linearGradient5614)"/>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Washing-machine</dc:title>
+        <dc:date>2006-12-29T08:52:18</dc:date>
+        <dc:description>activity, clip art, clipart, electrical appliances, house, image, media, people, png, public domain, svg, tool, </dc:description>
+        <dc:source>http://openclipart.org/detail/2404/washing-machine-by-machovka-2404</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Machovka</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>activity</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>electrical appliances</rdf:li>
+            <rdf:li>house</rdf:li>
+            <rdf:li>image</rdf:li>
+            <rdf:li>media</rdf:li>
+            <rdf:li>people</rdf:li>
+            <rdf:li>png</rdf:li>
+            <rdf:li>public domain</rdf:li>
+            <rdf:li>svg</rdf:li>
+            <rdf:li>tool</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

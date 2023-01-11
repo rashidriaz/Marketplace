@@ -34,7 +34,7 @@ export default function RegistrationForm({navigation}: Props) {
     setIsLoading(true);
     const response: AuthResponseType = await signUp(values.email, values.password);
     if (response.userId) {
-      const user: User = {name: values.name, email: values.email, phoneNumber: values.phoneNumber, posts: []};
+      const user: User = {name: values.name, email: values.email, phoneNumber: values.phoneNumber, posts: [], userId: response.userId};
       await createNewUser(user, response.userId);
       setUserData(user);
       navigation.navigate("Dashboard");
@@ -62,8 +62,9 @@ export default function RegistrationForm({navigation}: Props) {
             value={values.name}
             onBlur={handleBlur("name")}
             onChangeText={handleChange("name")}
+            touched={!!touched.name}
+            errorText={errors.name}
           />
-          {touched.name && errors.name && <Text style={styles.errorMessage}>{errors.name}</Text>}
           <TextInput
             label="Email"
             returnKeyType="next"
@@ -73,8 +74,9 @@ export default function RegistrationForm({navigation}: Props) {
             autoCapitalize="none"
             textContentType="emailAddress"
             keyboardType="email-address"
+            touched={!!touched.email}
+            errorText={errors.email}
           />
-          {touched.email && errors.email && <Text style={styles.errorMessage}>{errors.email}</Text>}
           <TextInput
             label="Password"
             returnKeyType="done"
@@ -82,8 +84,9 @@ export default function RegistrationForm({navigation}: Props) {
             value={values.password}
             onChangeText={handleChange("password")}
             secureTextEntry
+            touched={!!touched.password}
+            errorText={errors.password}
           />
-          {touched.password && errors.password && <Text style={styles.errorMessage}>{errors.password}</Text>}
           <PhoneInput ref={phoneInputRef} defaultCode="PK" value={values.phoneNumber}
                       onChangeFormattedText={value => {
                         if (!phoneInputRef.current?.isValidNumber(value.toString())) {

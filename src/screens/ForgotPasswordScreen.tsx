@@ -25,7 +25,7 @@ type Props = {
 const ForgotPasswordScreen = ({navigation}: Props) => {
   const {sendResetPasswordLink} = useAuth();
   const [showDialog, setShowDialog] = useState(false);
-  const onSubmit = async(values: ForgetPasswordFormValues) => {
+  const onSubmit = async (values: ForgetPasswordFormValues) => {
     const email = values.email;
     await sendResetPasswordLink(email);
     setShowDialog(true);
@@ -33,55 +33,56 @@ const ForgotPasswordScreen = ({navigation}: Props) => {
 
   return (
     <Provider>
-    <Background>
-      <BackButton goBack={() => navigation.navigate('LoginScreen')}/>
+      <Background>
+        <BackButton goBack={() => navigation.navigate('LoginScreen')}/>
 
-      <Logo/>
+        <Logo/>
 
-      <Header>Reset your Password</Header>
-      <Formik initialValues={initialValues} validationSchema={ForgetPasswordFormSchema} onSubmit={onSubmit}>
-        {({
-            handleChange,
-            handleSubmit,
-            handleBlur,
-            values,
-            errors,
-            touched,
-            isValid
-          }) => (
-          <>
-            <TextInput
-              label="Email"
-              returnKeyType="next"
-              onBlur={handleBlur("email")}
-              value={values.email}
-              onChangeText={handleChange("email")}
-              autoCapitalize="none"
-              textContentType="emailAddress"
-              keyboardType="email-address"
-            />
-            {touched.email && errors.email && <Text style={{fontSize: 10, color: 'red'}}>{errors.email}</Text>}
+        <Header>Reset your Password</Header>
+        <Formik initialValues={initialValues} validationSchema={ForgetPasswordFormSchema} onSubmit={onSubmit}>
+          {({
+              handleChange,
+              handleSubmit,
+              handleBlur,
+              values,
+              errors,
+              touched,
+              isValid
+            }) => (
+            <>
+              <TextInput
+                label="Email"
+                returnKeyType="next"
+                onBlur={handleBlur("email")}
+                value={values.email}
+                onChangeText={handleChange("email")}
+                autoCapitalize="none"
+                textContentType="emailAddress"
+                keyboardType="email-address"
+                touched={!!touched.email}
+                errorText={errors.email}
+              />
 
-            <Button disabled={!isValid} onPress={handleSubmit} mode="contained">
-              Send reset link
-            </Button>
-          </>
-        )}
-      </Formik>
+              <Button disabled={!isValid} onPress={handleSubmit} mode="contained">
+                Send reset link
+              </Button>
+            </>
+          )}
+        </Formik>
 
-      <TouchableOpacity
-        style={styles.back}
-        onPress={() => navigation.navigate('LoginScreen')}
-      >
-        <Text style={styles.label}>← Back to login</Text>
-      </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.back}
+          onPress={() => navigation.navigate('LoginScreen')}
+        >
+          <Text style={styles.label}>← Back to login</Text>
+        </TouchableOpacity>
 
 
         <EmailConfirmationDialog visible={showDialog} hideDialog={() => {
           setShowDialog(false);
           navigation.navigate("LoginScreen");
         }}/>
-    </Background>
+      </Background>
     </Provider>
   );
 };
