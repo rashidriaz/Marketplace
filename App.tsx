@@ -8,9 +8,9 @@ import {FirebaseAppProvider} from "./src/client/useFirebaseApp";
 const Main = () => (
   <FirebaseAppProvider>
     <RecoilRoot>
-      <Provider theme={theme}>
-        <App/>
-      </Provider>
+        <Provider theme={theme}>
+          <App/>
+        </Provider>
     </RecoilRoot>
   </FirebaseAppProvider>
 );

@@ -1,4 +1,4 @@
-import {doc, setDoc, getDoc, collection, writeBatch, query, getDocs} from "firebase/firestore";
+import {doc, setDoc, getDoc, collection, query, getDocs} from "firebase/firestore";
 import {useFirebaseApp} from "./useFirebaseApp";
 import {User} from "../models/User";
 import {Post} from "../models/Post";
@@ -27,5 +27,13 @@ export const useFirestore = () => {
     };
     return user;
   }
-  return {createNewUser, getUser, createPost}
+
+  const getPosts = async()=>{
+    const collectionReference = collection(firestore, "posts");
+    const generatedQuery = query(collectionReference);
+    const querySnapshot = await getDocs(generatedQuery);
+
+    return querySnapshot.docs;
+  }
+  return {createNewUser, getUser, createPost, getPosts}
 }

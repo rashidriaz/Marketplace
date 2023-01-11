@@ -13,11 +13,11 @@ export type Category = {
   icon: string;
 }
 export const CategoriesList = [
-  {title: Categories.ELECTRONICS, icon: "src/assets/categories/electronics.svg"},
-  {title: Categories.REAL_ESTATE, icon: "src/assets/categories/real_estate.svg"},
-  {title: Categories.PETS, icon: "src/assets/categories/pets.svg"},
-  {title: Categories.APPLIANCES, icon: "src/assets/categories/appliances.svg"},
-  {title: Categories.AUTO_MOBILE, icon: "src/assets/categories/automobile.svg"},
-  {title: Categories.JOBS, icon: "src/assets/categories/jobs.svg"},
-  {title: Categories.SERVICES, icon: "src/assets/categories/services.svg"},
+  {title: Categories.ELECTRONICS, icon: "/assets/categories/electronics.svg"},
+  {title: Categories.REAL_ESTATE, icon: "/assets/categories/real_estate.svg"},
+  {title: Categories.PETS, icon: "/assets/categories/pets.svg"},
+  {title: Categories.APPLIANCES, icon: "/assets/categories/appliances.svg"},
+  {title: Categories.AUTO_MOBILE, icon: "/assets/categories/automobile.svg"},
+  {title: Categories.JOBS, icon: "/assets/categories/jobs.svg"},
+  {title: Categories.SERVICES, icon: "/assets/categories/services.svg"},
 ]
